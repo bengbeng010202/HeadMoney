@@ -1,0 +1,13 @@
+name: HeadMoney
+version: 1.0.0
+main: me.BengBeng.headmoney.HeadMoney
+author: BengBeng
+depend: [Vault]
+api-version: 1.13
+commands:
+  headmoney:
+    aliases: [hmoney, hm]
+
+permissions:
+  headmoney.command.reload:
+    description: 'Allow you to reload the config file.'

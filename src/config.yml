@@ -1,0 +1,32 @@
+# !~~~~~~~~~~~~~~~~~~~~~~~~~! #
+#   + MADE BY: [BengBeng] +   #
+#     + VERSION: v1.0.0 +     #
+# !~~~~~~~~~~~~~~~~~~~~~~~~~! #
+
+#Khi giết người chơi bị giết, đầu của họ sẽ được drop xuống đất
+#hay sẽ đưa thẳng vào túi đồ của người giết ?
+drop-head: true
+
+#Định dạng:
+FORMAT:
+  #Định dang dấu phân chia:
+  separator: '&f: '
+  #Định dạng phần giá trị:
+  #  {value} - số tiền thực nhận.
+  value: '&d{value}'
+  #Định dạng lore chứa tiền:
+  lore-money: '&cTiền cướp được'
+  #Định dạng trên item: 'lore-money' + 'separator' + 'value'
+  #Ví dụ: '&cTiền cướp được&f: &d{value}'
+
+#Phần thông báo:
+MESSAGE:
+  PREFIX: '&6[&bHeadMoney&6]&r '
+  money-received: '{prefix}&7Bạn đã nhận được số tiền &e${money}&7.'
+  not-owner: '{prefix}&cBạn không thể sử dụng vì &e{player} &cmới là chủ sở hữu của vật phẩm này!'
+  config-reload: '{prefix}&aHoàn tất làm mới lại tập tin.'
+  no-permission: '{prefix}&cBạn không có quyền để có thể sử dụng câu lệnh này!'
+
+#Đây là danh sách các vật phẩm được lưu lại để kiểm tra, vui
+#lòng không chỉnh sửa để tránh xảy ra lỗi.
+ITEM-SAVED: {}
